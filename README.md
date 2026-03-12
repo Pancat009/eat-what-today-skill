@@ -43,24 +43,9 @@ python scripts/hydrate_food_images.py --limit 100 --external-ai-cmd "your_ai_com
 2. 没有的话用Pollinations生图 
 3. 还没有就接上你自己的的 AI 命令。
 
-## 飞书发图片（重要！）
 
-当在 OpenClaw 飞书环境发送本地图片时，需要遵循以下规则：
-
-### ✅ 稳定方案（direct runtime 兼容）
-
-1. **复制图片到 workspace**：将菜品图片复制到 `/home/azureuser/.openclaw/workspace/`
-2. **使用 media 字段发送**：调用 message 工具时使用 `media` 字段传递 workspace 路径
-3. **发送顺序规则**：
-   - 一段文字 → 一张图 → 一段文字 → 一张图（顺序发送）
-   - 禁止 Markdown 本地路径图片
-   - 禁止只发文字不发图
-
-### ⚠️ 禁止事项
-
-- ❌ 禁止 Markdown 本地图片路径
-- ❌ 禁止只发文字不发送实际图片
-- ❌ 禁止一次性发送多张图片（必须逐张发送）
+## 备注
+可以看到为了实现Openclaw自动发图片，SKILL.md中添加了通过飞书发图片的备注提醒，如果需要通过其他Channel或不需要，都可以自行修改。
 
 ## 目录
 
