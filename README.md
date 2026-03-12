@@ -6,7 +6,6 @@
 
 你可以输入你城市的信息，天气，预算，辣度，甚至是心情！AI可以帮你推荐对应的菜品！
 
-
 ## 快速用法
 
 ```bash
@@ -46,6 +45,9 @@ python scripts/hydrate_food_images.py --limit 100 --external-ai-cmd "your_ai_com
 
 ## 备注
 可以看到为了实现Openclaw自动发图片，SKILL.md中添加了通过飞书发图片的备注提醒，如果需要通过其他Channel或不需要，都可以自行修改。
+
+如果通过ClawHub下载没有图片，则可以访问GitHub原仓库：
+https://github.com/Pancat009/eat-what-today-skill，获取现存图片。
 
 ## 目录
 
